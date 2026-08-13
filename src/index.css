@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #be4a34;
+  color: #f7f4ef;
+}
+
+/* Utility for the hairline rule used throughout section headers */
+.rule-line {
+  height: 1px;
+  background-color: currentColor;
+  opacity: 0.15;
+}
