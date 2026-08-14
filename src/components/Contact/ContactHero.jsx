@@ -1,4 +1,4 @@
-import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi'
+import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-icons/hi'
 import useScrollReveal from '../../hooks/useScrollReveal'
 import { site } from '../../data'
 
@@ -31,6 +31,13 @@ export default function ContactHero() {
         >
           <HiOutlineMail aria-hidden="true" className="text-lg" />
           {site.email}
+        </a>
+        <a
+          href={`tel:${site.phone}`}
+          className="inline-flex items-center gap-3 border border-primary/10 px-6 py-4 text-sm font-semibold uppercase tracking-widest2 transition-colors hover:border-accent hover:text-accent"
+        >
+          <HiOutlinePhone aria-hidden="true" className="text-lg" />
+          {site.phone}
         </a>
         <span className="inline-flex items-center gap-3 border border-primary/10 px-6 py-4 text-sm font-semibold uppercase tracking-widest2 text-primary/60">
           <HiOutlineLocationMarker aria-hidden="true" className="text-lg" />

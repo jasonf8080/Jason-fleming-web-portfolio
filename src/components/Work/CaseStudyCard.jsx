@@ -9,7 +9,7 @@ export default function CaseStudyCard({ study }) {
       data-reveal
       className="group block border border-primary/10 bg-white p-6 transition-shadow hover:shadow-lg md:p-8"
     >
-      <SiteMockup client={study.client} theme={study.theme} />
+      <SiteMockup client={study.client} theme={study.theme} image={study.image} />
 
       <div className="mt-6 flex items-start justify-between gap-4">
         <div>

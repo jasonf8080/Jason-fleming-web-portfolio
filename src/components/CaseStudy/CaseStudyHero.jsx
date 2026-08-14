@@ -55,7 +55,7 @@ export default function CaseStudyHero({ study }) {
       </div>
 
       <div data-reveal className="mt-12">
-        <SiteMockup client={study.client} theme={study.theme} />
+        <SiteMockup client={study.client} theme={study.theme} image={study.image} />
       </div>
     </section>
   )

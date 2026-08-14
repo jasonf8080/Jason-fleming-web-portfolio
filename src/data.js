@@ -8,6 +8,7 @@ export const site = {
   role: 'Web Designer & Developer',
   tagline: 'I build fast, beautifully animated websites for local businesses.',
   email: 'jasonf8080@gmail.com',
+  phone: '845-204-4236',
   location: 'South Salem, NY',
   url: 'https://jasonfleming.dev',
 }
@@ -71,17 +72,19 @@ export const caseStudies = [
   {
     slug: 'south-salem-winery',
     client: 'South Salem Winery',
-    year: '2024',
+    year: '2026',
     industry: 'Winery / Tasting Room',
     url: 'https://southsalemwinery.com',
     tagline: 'A small-batch New York winery, built to feel as handcrafted online as the wine is in the bottle.',
     summary:
       'South Salem Winery needed a site that matched the care put into every bottle — clean, moody, and fast, with room to keep growing as new vintages and events are added.',
-    theme: { bg: '#111111', fg: '#F7F4EF', accent: '#D84536' },
-    socials: [
-      { label: 'Instagram', url: 'https://www.instagram.com/southsalemwinery/' },
-      { label: 'Facebook', url: 'https://www.facebook.com/southsalemwinery/' },
+    image: '/case-study-images/south-salem-winery-home.jpg',
+    galleryImages: [
+      '/case-study-images/south-salem-winery-home.jpg',
+      '/case-study-images/south-salem-winery-story.jpg',
     ],
+    theme: { bg: '#111111', fg: '#F7F4EF', accent: '#D84536' },
+    socials: [{ label: 'Instagram', url: 'https://www.instagram.com/southsalemwinery/' }],
     features: [
       {
         title: 'Seamless animation',
@@ -110,12 +113,17 @@ export const caseStudies = [
   {
     slug: 'gardenside-kitchen',
     client: 'Gardenside Kitchen',
-    year: '2024',
+    year: '2026',
     industry: 'Café / Coffee Bar',
     url: 'https://gardensidekitchen.com',
     tagline: 'A café and coffee bar set inside a nursery greenhouse — the site had to carry that same warmth.',
     summary:
       "Gardenside Kitchen's setting is unusual — a coffee and wine bar tucked inside a working nursery. The site needed to sell that atmosphere while staying fast, findable, and easy to update.",
+    image: '/case-study-images/gardenside-kitchen-home.jpg',
+    galleryImages: [
+      '/case-study-images/gardenside-kitchen-home.jpg',
+      '/case-study-images/gardenside-kitchen-story.jpg',
+    ],
     theme: { bg: '#1B1815', fg: '#F7F4EF', accent: '#BE4A34' },
     socials: [{ label: 'Instagram', url: 'https://www.instagram.com/gardensidekitchen/' }],
     features: [

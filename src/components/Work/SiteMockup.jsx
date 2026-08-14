@@ -1,13 +1,20 @@
-// Decorative browser + phone frame representing a client site in its own
-// brand colors. Built entirely from divs (no <img>) since it's a stylized
-// composition, not a literal screenshot — swap in real photography here
-// (tag: "gallery"/"hero") once available, following the image rules.
-export default function SiteMockup({ client, theme, compact = false }) {
+export default function SiteMockup({ client, theme, compact = false, image }) {
   const { bg, fg, accent } = theme
+
+  if (image) {
+    return (
+      <div className={`overflow-hidden rounded-t-lg border border-primary/10 bg-white shadow-xl ${compact ? 'aspect-[16/10]' : 'aspect-[16/10]'}`}>
+        <img
+          src={image}
+          alt={`${client} case study preview`}
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
+    )
+  }
 
   return (
     <div className={`flex items-end gap-4 ${compact ? '' : 'md:gap-6'}`} aria-hidden="true">
-      {/* Desktop frame */}
       <div
         className={`relative flex-1 overflow-hidden rounded-t-lg border border-primary/10 shadow-xl ${
           compact ? 'aspect-[16/10]' : 'aspect-[16/10]'
@@ -39,7 +46,6 @@ export default function SiteMockup({ client, theme, compact = false }) {
         </div>
       </div>
 
-      {/* Phone frame */}
       <div
         className="relative hidden w-20 shrink-0 overflow-hidden rounded-2xl border-4 border-primary/10 shadow-xl sm:block md:w-28"
         style={{ backgroundColor: bg, aspectRatio: '9 / 19' }}
