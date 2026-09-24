@@ -38,12 +38,7 @@ export default function Hero() {
             See The Work
             <HiArrowRight aria-hidden="true" />
           </Link>
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center gap-2 border border-primary px-8 py-4 text-sm font-semibold uppercase tracking-widest2 transition-colors hover:border-accent hover:text-accent"
-          >
-            Start A Project
-          </Link>
+         
         </div>
       </div>
 

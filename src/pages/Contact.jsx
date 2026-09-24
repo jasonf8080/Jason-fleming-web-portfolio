@@ -1,5 +1,5 @@
 import { Seo } from '../components/SEO'
-import { ContactHero, ContactForm } from '../components/Contact'
+import { ContactHero } from '../components/Contact'
 
 export default function Contact() {
   return (
@@ -10,7 +10,6 @@ export default function Contact() {
         path="/contact"
       />
       <ContactHero />
-      <ContactForm />
     </>
   )
 }
